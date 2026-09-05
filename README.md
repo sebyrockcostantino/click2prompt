@@ -6,14 +6,9 @@
 
 ---
 
-
-
-
 https://github.com/user-attachments/assets/28752efd-1f90-4c79-9f5e-1926b4a36dab
 
-
-
-
+<sup>Dal click destro al risultato: il prompt copiato negli appunti, incollato in un generatore, e il confronto con l’originale.</sup>
 
 ## Cosa fa
 
