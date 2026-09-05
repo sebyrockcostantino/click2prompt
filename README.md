@@ -4,8 +4,6 @@
 
 *di SebyRock*
 
-> **In English:** a free Chrome extension that turns any image you see into a ready-to-use prompt for AI image models. Right-click an image, or press `Alt+Shift+S` to capture any area of the screen. It runs on your own free Google AI Studio key, with no server in between. **The interface and the docs are in Italian.**
-
 ---
 
 ## Cosa fa
