@@ -6,6 +6,12 @@
 
 ---
 
+
+
+https://github.com/user-attachments/assets/58133a8b-9db8-4ea8-917f-d52ef7387c28
+
+
+
 ## Cosa fa
 
 - **Click destro su un'immagine** → *Click2Prompt: prompt di questa immagine*
