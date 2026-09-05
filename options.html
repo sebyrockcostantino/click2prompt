@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Click2Prompt — Impostazioni</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+<div class="wrap">
+  <button type="button" class="back" id="close">← Chiudi</button>
+  <h1>Impostazioni</h1>
+  <p>La chiave resta salvata solo sul tuo computer e non passa da nessun altro server.</p>
+
+  <div class="card">
+    <h2>Chiave</h2>
+    <div id="box-gemini">
+      <label class="field">
+        <span>API key Google — la ottieni in 1 minuto su <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">aistudio.google.com/apikey</a></span>
+        <input type="password" id="geminiKey" placeholder="AIza…" autocomplete="off">
+      </label>
+      <details class="adv">
+        <summary>Avanzate</summary>
+        <label class="field">
+          <span>Modello — lascia vuoto per la scelta automatica: l'estensione chiede a Google quali modelli ha la tua chiave e prende il Flash più recente</span>
+          <input type="text" id="geminiModel" placeholder="automatico (consigliato)">
+        </label>
+      </details>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h2>Prompt in uscita</h2>
+    <label class="field">
+      <span>Formato</span>
+      <select id="style">
+        <option value="naturale">Linguaggio naturale — da incollare in un generatore</option>
+        <option value="json">JSON strutturato — per automazioni</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>Lingua del prompt</span>
+      <select id="lang">
+        <option value="en">Inglese (consigliato, i modelli lo capiscono meglio)</option>
+        <option value="it">Italiano</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="bar">
+    <button class="primary" id="save">Salva</button>
+    <button id="test">Prova la connessione</button>
+    <span class="note" id="msg"></span>
+  </div>
+
+  <p class="credit">di <b>SebyRock</b></p>
+</div>
+<script type="module" src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* Solo l'host: tutta la UI vive nello shadow DOM, isolata dal CSS della pagina. */
+#click2prompt-host {
+  all: initial;
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  pointer-events: none;
+}

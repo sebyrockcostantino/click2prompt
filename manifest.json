@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Click2Prompt",
+  "version": "1.0.0",
+  "description": "Analizza qualsiasi immagine che vedi e ottieni subito il prompt per riprodurla con l'IA.",
+  "permissions": ["contextMenus", "storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" }
+  },
+  "commands": {
+    "capture-area": {
+      "suggested_key": { "default": "Alt+Shift+S" },
+      "description": "Cattura un'area dello schermo e ottieni il prompt"
+    }
+  },
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" }
+}

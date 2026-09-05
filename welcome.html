@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Benvenuto in Click2Prompt</title>
+  <link rel="stylesheet" href="ui.css">
+  <style>
+    .hero { text-align: center; padding: 20px 0 32px; }
+    .hero h1 { font-size: 30px; }
+    .hero p { font-size: 15px; max-width: 460px; margin: 0 auto; }
+    .big { font-size: 15px; }
+    .done { text-align: center; padding: 30px 0; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>Click2Prompt è installata</h1>
+    <p>Da ora, qualsiasi immagine vedi online può diventare un prompt pronto da incollare. Mancano 60 secondi di configurazione, una sola volta.</p>
+  </div>
+
+  <div class="card">
+    <h2>Passo 1 · Prendi la chiave gratuita</h2>
+    <ol class="big">
+      <li>Apri <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">aistudio.google.com/apikey</a> ed entra col tuo account Google.</li>
+      <li>Clicca <b>Create API key</b> (non serve carta di credito).</li>
+      <li>Copia la chiave: comincia con <code>AIza…</code></li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Passo 2 · Incollala qui</h2>
+    <label class="field">
+      <span>La chiave resta salvata solo sul tuo computer, non viene inviata a nessun altro.</span>
+      <input type="password" id="key" placeholder="AIza…" autocomplete="off">
+    </label>
+    <div class="bar">
+      <button class="primary" id="save">Salva e verifica</button>
+      <span class="note" id="msg"></span>
+    </div>
+  </div>
+
+  <div class="card" id="ready">
+    <h2>Passo 3 · Come si usa</h2>
+    <ol class="big">
+      <li><b>Click destro su un'immagine</b> → “Click2Prompt: prompt di questa immagine”.</li>
+      <li><b>Alt+Shift+S</b> per selezionare un'area qualsiasi dello schermo, anche uno sfondo o un video.</li>
+      <li>Il prompt viene copiato negli appunti da solo. Nel pannello puoi passare dal linguaggio naturale al JSON e rigenerare.</li>
+    </ol>
+    <p class="note">Puoi cambiare formato del prompt e lingua quando vuoi, dalle <a href="#" id="opts">impostazioni</a>.</p>
+  </div>
+
+  <p class="credit">di <b>SebyRock</b></p>
+</div>
+<script type="module" src="welcome.js"></script>
+</body>
+</html>
