@@ -6,10 +6,6 @@
 
 > **In English:** a free Chrome extension that turns any image you see into a ready-to-use prompt for AI image models. Right-click an image, or press `Alt+Shift+S` to capture any area of the screen. It runs on your own free Google AI Studio key, with no server in between. **The interface and the docs are in Italian.**
 
-![Click2Prompt in azione: click destro su un'immagine trovata online, prompt copiato, immagine rigenerata da zero](media/demo-completo.gif)
-
-<sup>Il giro completo: click destro su un'immagine trovata online, il prompt arriva già negli appunti, si incolla in un generatore e alla fine il confronto tra l'originale e quella rifatta da zero.</sup>
-
 ---
 
 ## Cosa fa
@@ -62,12 +58,6 @@ Zero. L'estensione usa il piano gratuito di **Google AI Studio** e ognuno usa la
 - L'estensione non ha backend, non registra cosa analizzi, non invia statistiche.
 - **Sul piano gratuito Google dichiara che i contenuti inviati possono essere usati per migliorare i suoi modelli.** Per immagini pubbliche è irrilevante; per materiale riservato scegli un'altra strada.
 
-## "Il mio antivirus la segnala"
-
-Falso positivo strutturale: per funzionare l'estensione deve leggere le pagine aperte e catturare lo schermo, cioè le stesse capacità di un'estensione spia. Le euristiche giudicano i permessi, non le intenzioni, ed è il motivo per cui quasi tutte le estensioni di screenshot vengono segnalate. L'analisi automatica del codice di VirusTotal conclude: *"No malicious behavior, unauthorized exfiltration, or obfuscated code was found"*.
-
-Il codice è qui, sono 14 file di testo: gli unici host contattati sono `generativelanguage.googleapis.com` e, solo se lo attivi a mano, `api.anthropic.com` o `localhost` per Ollama.
-
 ## Motore
 
 L'interfaccia espone solo Google, di proposito: ogni scelta in più in apertura è un utente che si ferma. **Ollama** (locale, offline) e **Anthropic** restano implementati in `background.js` e si riattivano scrivendo `provider` in `chrome.storage.local` (`"ollama"` o `"anthropic"`) insieme ai relativi campi.
@@ -83,11 +73,11 @@ Il modello non è scritto nel codice, perché Google ritira i vecchi per i nuovi
 | `manifest.json` | permessi, menu contestuale, scorciatoia |
 | `background.js` | service worker: menu, screenshot, ridimensionamento, chiamate ai provider |
 | `models.js` | scelta automatica del modello, gestione errori e sovraccarichi |
-| `prompts.js` | istruzioni di sistema dei tre formati |
+| `prompts.js` | istruzioni di sistema dei due formati |
 | `content.js` / `content.css` | pannello e selezione area, isolati in shadow DOM |
 | `options.*` / `popup.*` / `welcome.*` | impostazioni, popup, onboarding |
 
-Le immagini vengono ridotte a 1568px di lato lungo e convertite in JPEG prima dell'invio: meno banda, meno token, nessun errore di dimensione.
+Le immagini vengono ridotte a 2048px di lato lungo e convertite in JPEG prima dell'invio: meno banda, meno token, nessun errore di dimensione.
 
 ## Licenza
 
