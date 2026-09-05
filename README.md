@@ -20,8 +20,8 @@ Due formati, si cambiano dal pannello:
 
 | Formato | Per cosa |
 |---|---|
-| **Linguaggio naturale** | da incollare in qualsiasi generatore di immagini |
-| **JSON strutturato** | da dare in pasto a un'automazione |
+| **Linguaggio naturale** | il prompt gia pronto, da incollare in qualsiasi generatore di immagini |
+| **JSON strutturato** | lo stesso contenuto diviso in campi separati (colori, testi, posizioni, prospettiva), leggibile da un programma: serve a chi lo passa a un flusso automatico |
 
 Il prompt può uscire in inglese (consigliato) o in italiano.
 
