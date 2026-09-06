@@ -20,7 +20,7 @@ Due formati, si cambiano dal pannello:
 
 | Formato | Per cosa |
 |---|---|
-| **Linguaggio naturale** | il prompt giÃ  pronto, da incollare in qualsiasi generatore di immagini |
+| **Linguaggio naturale** | il prompt già pronto, da incollare in qualsiasi generatore di immagini |
 | **JSON strutturato** | lo stesso prompt scritto in linguaggio JSON, con ogni elemento in un campo suo. Conviene quando vuoi cambiare un solo dettaglio senza riscrivere tutto, quando ti serve una serie di immagini coerenti fra loro, o quando il prompt lo legge un programma invece di una persona |
 
 Il prompt può uscire in inglese (consigliato) o in italiano.
